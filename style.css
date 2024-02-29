@@ -1,0 +1,103 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* OVERWRITE */
+
+:root {
+    --black_shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    --white_shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+    --dark_grey: rgb(32, 32, 35);
+    --light_grey: rgb(50, 50, 52);
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--dark_grey);
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--light_grey);
+    box-shadow: var(--black_shadow);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.greeting {
+    margin: 30px 0px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting h1.left {
+    margin-right: 100px;
+}
+
+.greeting h1.right {
+    margin-left: 100px;
+}
+
+mark {
+    background-color: skyblue;
+    color: var(--dark_grey);
+    padding: 5px 0px 1px 0px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.opening-image {
+    display: block;
+    margin: 40px auto 0px auto;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
